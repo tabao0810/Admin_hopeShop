@@ -260,7 +260,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .red-input {
   accent-color: #ff343b;
   height: 20px;

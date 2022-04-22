@@ -3,7 +3,7 @@
     <div class="modal__container" @click.stop>
       <div class="modal__header">
         <h1 class="modal__title">Form</h1>
-        <div class="modal__close" @click="hanldeClose">X</div>
+        <div class="modal__close" @click="hanldeClose">×</div>
       </div>
       <div class="modal__body">
         <slot></slot>
@@ -78,10 +78,11 @@ export default {
   line-height: 50px;
   border-radius: 50%;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
 }
 .modal__close:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  color: #ff343b;
   cursor: pointer;
+  transition: all linear 0.3s;
 }
 </style>

@@ -1,4 +1,4 @@
-import { createProductApi, deleteProductApi, getAllProductsApi,getSingleProductsApi, updateProductApi } from "../../apis/products";
+import {  createProductApi,deleteProductApi, getAllProductsApi,getSingleProductsApi, updateProductApi } from "../../apis/products";
 
 const state = () =>{
     return{
@@ -100,11 +100,15 @@ const actions={
         await updateProductApi(payload);
         context.dispatch("getAllProductAction");
     },
-    async deleteProductActions(context,payload){
-        await deleteProductApi(payload);
+    async deleteProductActions(context,payload){      
+        if(confirm("Bạn có chắc chắn xóa sản phẩm này") == true){
+            await deleteProductApi(payload);
         context.dispatch("getAllProductAction");
+        }else{
+            context.dispatch("getAllProductAction");
+        }
     },
-    async createProductAction(context,data){
+    async createProductAction(context,data){        
         await createProductApi(data);
         context.dispatch("getAllProductAction");
 

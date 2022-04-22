@@ -90,6 +90,9 @@
                       <option value="Chờ xác nhận">Chờ xác nhận</option>
                       <option value="Chờ lấy hàng">Chờ lấy hàng</option>
                       <option value="Đang giao">Đang giao</option>
+                      <option value="Giao hàng thành công">
+                        Giao hàng thành công
+                      </option>
                     </select>
                   </td>
                   <td>

@@ -18,7 +18,7 @@
                 <div class="input-group-append">
                   <button
                     @click="handleSearchClothing(searchClothing)"
-                    class="btn btn-sm btn-gradient-primary"
+                    class="btn btn-sm btn-info"
                     type="button"
                   >
                     Search
@@ -29,7 +29,7 @@
             <div>
               <button
                 type="button"
-                class="mr-2 btn btn-gradient-primary btn-icon-text"
+                class="mr-2 btn btn-info btn-icon-text"
                 @click="handleOpenModalCartAdd"
               >
                 <i class="mdi mdi-account-plus btn-icon-prepend"></i> ADD
@@ -64,7 +64,7 @@
                     <label
                       v-for="(sizeClothing, index) in product.sizesClothing"
                       :key="index"
-                      class="badge badge-gradient-primary mr-2"
+                      class="badge badge-info mr-2"
                       >{{ sizeClothing }}</label
                     >
                   </td>
@@ -72,7 +72,7 @@
                     <label
                       v-for="(color, index) in product.colors"
                       :key="index"
-                      class="badge badge-gradient-primary mr-2"
+                      class="badge badge-info mr-2 text-uppercase"
                       >{{ color }}</label
                     >
                   </td>
@@ -87,7 +87,10 @@
                     >
                       <i class="mdi mdi-border-color btn-icon-prepend"></i>
                     </button>
-                    <button class="btn-feature btn-trash">
+                    <button
+                      class="btn-feature btn-trash"
+                      @click="handleDelete(product._id)"
+                    >
                       <i class="mdi mdi-delete btn-icon-prepend"></i>
                     </button>
                   </td>
@@ -138,7 +141,7 @@
                 <div class="input-group-append">
                   <button
                     @click="handleSearchAccesory(searchAccesory)"
-                    class="btn btn-sm btn-gradient-primary"
+                    class="btn btn-sm btn-info"
                     type="button"
                   >
                     Search
@@ -149,7 +152,7 @@
             <div>
               <button
                 type="button"
-                class="mr-2 btn btn-gradient-primary btn-icon-text"
+                class="mr-2 btn btn-info btn-icon-text"
                 @click="handleOpenModalCartAdd"
               >
                 <i class="mdi mdi-account-plus btn-icon-prepend"></i> ADD
@@ -188,7 +191,10 @@
                     >
                       <i class="mdi mdi-border-color btn-icon-prepend"></i>
                     </button>
-                    <button class="btn-feature btn-trash">
+                    <button
+                      class="btn-feature btn-trash"
+                      @click="handleDelete(product._id)"
+                    >
                       <i class="mdi mdi-delete btn-icon-prepend"></i>
                     </button>
                   </td>
@@ -239,7 +245,7 @@
                 <div class="input-group-append">
                   <button
                     @click="handleSearchBag(searchBag)"
-                    class="btn btn-sm btn-gradient-primary"
+                    class="btn btn-sm btn-info"
                     type="button"
                   >
                     Search
@@ -250,7 +256,7 @@
             <div>
               <button
                 type="button"
-                class="mr-2 btn btn-gradient-primary btn-icon-text"
+                class="mr-2 btn btn-info btn-icon-text"
                 @click="handleOpenModalCartAdd"
               >
                 <i class="mdi mdi-account-plus btn-icon-prepend"></i> ADD
@@ -283,7 +289,7 @@
                     <label
                       v-for="(color, index) in product.colors"
                       :key="index"
-                      class="badge badge-gradient-primary mr-2"
+                      class="badge badge-info mr-2 text-uppercase"
                       >{{ color }}</label
                     >
                   </td>
@@ -298,7 +304,10 @@
                     >
                       <i class="mdi mdi-border-color btn-icon-prepend"></i>
                     </button>
-                    <button class="btn-feature btn-trash">
+                    <button
+                      class="btn-feature btn-trash"
+                      @click="handleDelete(product._id)"
+                    >
                       <i class="mdi mdi-delete btn-icon-prepend"></i>
                     </button>
                   </td>
@@ -349,7 +358,7 @@
                 <div class="input-group-append">
                   <button
                     @click="handleSearchShoe(searchShoe)"
-                    class="btn btn-sm btn-gradient-primary"
+                    class="btn btn-sm btn-info"
                     type="button"
                   >
                     Search
@@ -360,7 +369,7 @@
             <div>
               <button
                 type="button"
-                class="mr-2 btn btn-gradient-primary btn-icon-text"
+                class="mr-2 btn btn-info btn-icon-text"
                 @click="handleOpenModalCartAdd"
               >
                 <i class="mdi mdi-account-plus btn-icon-prepend"></i> ADD
@@ -394,7 +403,7 @@
                     <label
                       v-for="(sizeShoe, index) in product.sizesShoe"
                       :key="index"
-                      class="badge badge-gradient-primary mr-2"
+                      class="badge badge-info mr-2"
                       >{{ sizeShoe }}</label
                     >
                   </td>
@@ -402,7 +411,7 @@
                     <label
                       v-for="(color, index) in product.colors"
                       :key="index"
-                      class="badge badge-gradient-primary mr-2"
+                      class="badge badge-info mr-2 text-uppercase"
                       >{{ color }}</label
                     >
                   </td>
@@ -620,7 +629,7 @@ export default {
   font-size: 20px;
 }
 .btn-pen:hover {
-  color: rgb(0, 255, 76);
+  color: #1bdbf8;
 }
 .btn-trash:hover {
   color: red;

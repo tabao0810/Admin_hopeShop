@@ -34,8 +34,12 @@ export default {
 <style lang="scss"></style>
 <style>
 #app {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.table thead th,
+.card .card-title {
+  font-family: "Roboto", sans-serif;
 }
 </style>

@@ -33,7 +33,8 @@ export const createProductApi = async(product)=>{
     const res = await axios({
         method:"POST",
         url:"http://localhost:5035/api/product/create",
-       data:product
+       data:product,
+       
     })
     return res.data
 }
