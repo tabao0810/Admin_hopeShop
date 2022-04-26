@@ -98,6 +98,7 @@ const actions={
     },
     async updateProductActions(context,payload){
         await updateProductApi(payload);
+        alert("Cập nhật thành công!")
         context.dispatch("getAllProductAction");
     },
     async deleteProductActions(context,payload){      

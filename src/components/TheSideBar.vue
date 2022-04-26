@@ -50,6 +50,21 @@
                 >Quản lý người dùng</router-link
               >
             </li>
+            <li class="nav-item">
+              <router-link to="/blog" class="nav-link" href=""
+                >Quản lý tin tức</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link to="/brand" class="nav-link" href=""
+                >Quản lý thương hiệu</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link to="/banner" class="nav-link" href=""
+                >Quản lý Banner</router-link
+              >
+            </li>
           </ul>
         </div>
       </li>

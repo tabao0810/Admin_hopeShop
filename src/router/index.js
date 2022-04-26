@@ -2,6 +2,9 @@ import TheDashboard from '../components/TheDashboard.vue'
 import ProductView from '../pages/ProductView.vue'
 import UserView from '../pages/UserView.vue'
 import OrderView from '../pages/OrderView.vue'
+import BlogView from '../pages/BlogView.vue'
+import BrandView from '../pages/BrandView.vue'
+import BannerView from '../pages/BannerView.vue'
 import {createRouter,createWebHistory} from 'vue-router'
 
 const routes = [
@@ -19,6 +22,15 @@ const routes = [
     },
     {
         path:"/order",component:OrderView,
+    },
+    {
+        path:"/blog",component:BlogView,
+    },
+    {
+        path:"/brand",component:BrandView,
+    },
+    {
+        path:"/banner",component:BannerView,
     }
     
     

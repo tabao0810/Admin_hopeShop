@@ -51,12 +51,9 @@
                   </td>
                   <td>
                     <button
-                      class="btn-feature btn-pen"
-                      @click="handleOpenModalCartList(product)"
+                      class="btn-feature btn-trash"
+                      @click="handleDelete(user._id)"
                     >
-                      <i class="mdi mdi-border-color btn-icon-prepend"></i>
-                    </button>
-                    <button class="btn-feature btn-trash">
                       <i class="mdi mdi-delete btn-icon-prepend"></i>
                     </button>
                   </td>
@@ -128,6 +125,7 @@ export default {
     ...mapActions({
       getAllUser: "getAllUserAction",
       handleSearchName: "setSearchNameAction",
+      handleDelete: "removeUserAction",
     }),
   },
   created() {

@@ -2,11 +2,18 @@
   <table cellpadding="10" width="100%">
     <tr>
       <td width="20%">Hình ảnh:</td>
-      <td width="80%">
+      <td width="80%" class="flex">
+        <img
+          :src="productDetail.image"
+          style="width: 30%"
+          class="mt-3 d-flex"
+          alt=""
+        />
         <input
-          type="text"
-          v-model="productDetail.image"
-          style="width: 100%; padding: 8px"
+          type="file"
+          ref="file"
+          @change="UploadImage()"
+          class="mt-2 flex-grow-1"
         />
       </td>
     </tr>
@@ -239,10 +246,9 @@
 </template>
 
 <script>
-// import { reactive, toRefs } from "@vue/reactivity";
-// import { useStore } from "vuex";
+import axios from "axios";
 import { createNamespacedHelpers } from "vuex";
-const { mapState, mapActions } = createNamespacedHelpers("products");
+const { mapState } = createNamespacedHelpers("products");
 export default {
   data() {
     return {};
@@ -253,14 +259,32 @@ export default {
     }),
   },
   methods: {
-    ...mapActions({
-      updateProduct: "updateProductActions",
-    }),
+    UploadImage() {
+      this.productDetail.image = this.$refs.file.files[0];
+    },
+    async updateProduct() {
+      const data = new FormData();
+      data.append("file", this.productDetail.image);
+      data.append("upload_preset", "uploads");
+      try {
+        const uploads = await axios.post(
+          "https://api.cloudinary.com/v1_1/dwdezrrqh/upload",
+          data
+        );
+        this.productDetail.image = uploads.data.url;
+        this.$store.dispatch(
+          "products/updateProductActions",
+          this.productDetail
+        );
+      } catch (err) {
+        alert(err);
+      }
+    },
   },
 };
 </script>
 
-<style scoped>
+<style>
 .red-input {
   accent-color: #ff343b;
   height: 20px;
@@ -285,8 +309,9 @@ ul.ks-cboxtags li {
 ul.ks-cboxtags li label {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 2px solid rgba(139, 139, 139, 0.3);
-  color: #adadad;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 550;
   border-radius: 25px;
   white-space: nowrap;
   margin: 3px 0px;

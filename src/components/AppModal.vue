@@ -2,7 +2,7 @@
   <div v-if="isOpen" class="modal" @click="hanldeClose">
     <div class="modal__container" @click.stop>
       <div class="modal__header">
-        <h1 class="modal__title">Form</h1>
+        <h1 class="modal__title"></h1>
         <div class="modal__close" @click="hanldeClose">×</div>
       </div>
       <div class="modal__body">

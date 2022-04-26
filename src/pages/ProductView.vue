@@ -480,7 +480,6 @@
 
 <script>
 import Paginate from "vuejs-paginate-next";
-
 import EditView from "../components/EditView.vue";
 import AddProduct from "../components/AddProducct.vue";
 import { createNamespacedHelpers } from "vuex";
@@ -616,6 +615,10 @@ export default {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.page-link,
+.page-item {
+  cursor: pointer;
 }
 .shop_paginatin {
   display: flex;
