@@ -65,7 +65,8 @@ const actions={
   },
   async updateBlogEdit(context,payload){
       await updateBlogApi(payload);
-      context.dispatch("getAllBlogAction")
+      context.dispatch("getAllBlogAction");
+      alert("Cập nhật thành công")
   },
   async createBlogAction(context,payload){
       await createBlogApi(payload);

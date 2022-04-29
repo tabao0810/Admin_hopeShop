@@ -71,8 +71,6 @@
         </div>
       </div>
     </div>
-
-    <the-user-management></the-user-management>
     <div class="row">
       <div class="col-12 grid-margin stretch-card">
         <div class="card">
@@ -347,13 +345,7 @@
 </template>
 
 <script>
-import TheUserManagement from "./TheUserManagement.vue";
-
-export default {
-  components: {
-    TheUserManagement,
-  },
-};
+export default {};
 </script>
 
 <style></style>

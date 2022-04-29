@@ -98,8 +98,8 @@ const actions={
     },
     async updateProductActions(context,payload){
         await updateProductApi(payload);
-        alert("Cập nhật thành công!")
         context.dispatch("getAllProductAction");
+        alert("Cập nhật thành công!")
     },
     async deleteProductActions(context,payload){      
         if(confirm("Bạn có chắc chắn xóa sản phẩm này") == true){

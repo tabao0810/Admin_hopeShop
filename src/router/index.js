@@ -5,6 +5,7 @@ import OrderView from '../pages/OrderView.vue'
 import BlogView from '../pages/BlogView.vue'
 import BrandView from '../pages/BrandView.vue'
 import BannerView from '../pages/BannerView.vue'
+import ChartView from '../pages/ChartView.vue'
 import {createRouter,createWebHistory} from 'vue-router'
 
 const routes = [
@@ -31,6 +32,9 @@ const routes = [
     },
     {
         path:"/banner",component:BannerView,
+    },
+    {
+        path:"/chart",component:ChartView
     }
     
     

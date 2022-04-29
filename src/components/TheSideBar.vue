@@ -69,22 +69,10 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="pages/icons/mdi.html">
-          <span class="menu-title">Type</span>
+        <router-link to="/chart" class="nav-link" href="">
+          <span class="menu-title">Thống kê doanh thu</span>
           <i class="mdi mdi-contacts menu-icon"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/forms/basic_elements.html">
-          <span class="menu-title">Forms</span>
-          <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="pages/charts/chartjs.html">
-          <span class="menu-title">Charts</span>
-          <i class="mdi mdi-chart-bar menu-icon"></i>
-        </a>
+        </router-link>
       </li>
     </ul>
   </nav>

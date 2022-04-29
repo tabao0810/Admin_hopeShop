@@ -161,6 +161,7 @@ export default {
       });
     },
     totalPrice(list) {
+      console.log(list);
       const sub = list.carts.reduce(
         (sum, cart) => (sum += cart.amount * this.format_sale(cart)),
         0

@@ -36,7 +36,7 @@
               </button>
             </div>
           </div>
-          <div class="table-responsive">
+          <div class="table-responsive mt-3">
             <table class="table" border="1">
               <thead>
                 <tr align="center">
@@ -159,7 +159,7 @@
               </button>
             </div>
           </div>
-          <div class="table-responsive">
+          <div class="table-responsive mt-3">
             <table class="table" border="1">
               <thead>
                 <tr align="center">
@@ -263,7 +263,7 @@
               </button>
             </div>
           </div>
-          <div class="table-responsive">
+          <div class="table-responsive mt-3">
             <table class="table" border="1">
               <thead>
                 <tr align="center">
@@ -376,7 +376,7 @@
               </button>
             </div>
           </div>
-          <div class="table-responsive">
+          <div class="table-responsive mt-3">
             <table class="table" border="1">
               <thead>
                 <tr align="center">
