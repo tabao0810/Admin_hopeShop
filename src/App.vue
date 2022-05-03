@@ -1,32 +1,28 @@
 <template>
-  <div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
-    <the-header></the-header>
-    <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_sidebar.html -->
-      <the-side-bar></the-side-bar>
-      <!-- partial -->
-      <main class="main-panel">
-        <router-view></router-view>
-        <!-- content-wrapper ends -->
-        <!-- partial -->
-      </main>
-      <!-- main-panel ends -->
-    </div>
-    <!-- page-body-wrapper ends -->
-  </div>
-  <courses-list />
+  <admin-page v-if="adminAction.account !== ''"></admin-page>
+  <login-page v-else></login-page>
 </template>
 
 <script>
-import TheHeader from "./components/TheHeader.vue";
-import TheSideBar from "./components/TheSideBar.vue";
+import { useStore } from "vuex";
+import AdminPage from "./pages/AdminPage.vue";
+import LoginPage from "./pages/LoginPage.vue";
+import { createNamespacedHelpers } from "vuex";
+const { mapState } = createNamespacedHelpers("login");
 export default {
   name: "App",
   components: {
-    TheHeader,
-    TheSideBar,
+    AdminPage,
+    LoginPage,
+  },
+  setup() {
+    const store = useStore();
+    store.dispatch("login/loadAdminFromLocal");
+  },
+  computed: {
+    ...mapState({
+      adminAction: (state) => state.adminAction,
+    }),
   },
 };
 </script>

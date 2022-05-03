@@ -4,7 +4,8 @@ import products from './module/products';
 import order from './module/order';
 import blogs from "./module/blogs";
 import brands from './module/brands';
-import banner from './module/banner'
+import banner from './module/banner';
+import login from './module/login';
 const store = createStore({
     modules:{
         user : user,
@@ -12,7 +13,8 @@ const store = createStore({
         order,
         blogs,
         brands,
-        banner
+        banner,
+        login
     },
 });
 export default store;

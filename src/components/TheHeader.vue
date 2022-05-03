@@ -47,7 +47,7 @@
               <i class="mdi mdi-cached mr-2 text-success"></i> Activity Log
             </a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="" @click="LogoutPage">
               <i class="mdi mdi-logout mr-2 text-primary"></i> Signout
             </a>
           </div>
@@ -223,7 +223,15 @@
 </template>
 
 <script>
-export default {};
+import { createNamespacedHelpers } from "vuex";
+const { mapActions } = createNamespacedHelpers("login");
+export default {
+  methods: {
+    ...mapActions({
+      LogoutPage: "LogoutPageAction",
+    }),
+  },
+};
 </script>
 
 <style></style>
