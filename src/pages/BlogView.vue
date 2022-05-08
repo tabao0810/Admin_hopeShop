@@ -153,6 +153,9 @@ export default {
     handleCloseModalCartAdd() {
       this.isOpenModalCartAdd = false; // đóng modal
     },
+    clickCallback(pagenum) {
+      this.currentPage = Number(pagenum);
+    },
   },
   data() {
     return {

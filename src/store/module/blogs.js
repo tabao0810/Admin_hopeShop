@@ -70,6 +70,7 @@ const actions={
   },
   async createBlogAction(context,payload){
       await createBlogApi(payload);
+      alert("Tạo bài đăng thành công");
     context.dispatch("getAllBlogAction");
   }
  
