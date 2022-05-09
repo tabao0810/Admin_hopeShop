@@ -19,6 +19,7 @@ const actions ={
     },
     async createBannerAction(context,payload){
         await createBannerApi(payload);
+        alert("Tạo banner mới thành công")
         context.dispatch("getAllBannerAction")
     },
     async deleteBannerAction(context,payload){

@@ -19,6 +19,7 @@ const actions ={
     },
     async createBrandAction(context,payload){
         await createBrandApi(payload);
+        alert("Tạo thương hiệu mới thành công")
         context.dispatch("getAllBrandsAction")
     },
     async deleteBrandAction(context,payload){

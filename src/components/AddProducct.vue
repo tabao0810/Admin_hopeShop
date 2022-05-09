@@ -161,7 +161,7 @@
           </ul>
         </td>
       </tr>
-      <tr>
+      <tr v-if="product.typeProduct !== 'Phụ kiện'">
         <td>Màu săc:</td>
         <td>
           <ul class="ks-cboxtags">
@@ -171,7 +171,7 @@
                 id="checkboxOneColor"
                 value="pink"
                 v-model="product.colors"
-              /><label for="checkboxOneColor">Pink</label>
+              /><label for="checkboxOneColor">Hồng</label>
             </li>
             <li>
               <input
@@ -179,7 +179,7 @@
                 id="checkboxTwoColor"
                 value="black"
                 v-model="product.colors"
-              /><label for="checkboxTwoColor">Black</label>
+              /><label for="checkboxTwoColor">Đen</label>
             </li>
             <li>
               <input
@@ -187,7 +187,7 @@
                 id="checkboxThreeColor"
                 value="gray"
                 v-model="product.colors"
-              /><label for="checkboxThreeColor">Gray</label>
+              /><label for="checkboxThreeColor">Xám</label>
             </li>
             <li>
               <input
@@ -195,7 +195,7 @@
                 id="checkboxFourColor"
                 value="red"
                 v-model="product.colors"
-              /><label for="checkboxFourColor">Red</label>
+              /><label for="checkboxFourColor">Đỏ</label>
             </li>
             <li>
               <input
@@ -203,7 +203,7 @@
                 id="checkboxFiveColor"
                 value="blue"
                 v-model="product.colors"
-              /><label for="checkboxFiveColor">Blue</label>
+              /><label for="checkboxFiveColor">Xanh</label>
             </li>
             <li>
               <input
@@ -211,7 +211,7 @@
                 id="checkboxSixColor"
                 value="white"
                 v-model="product.colors"
-              /><label for="checkboxSixColor">White</label>
+              /><label for="checkboxSixColor">Trắng</label>
             </li>
           </ul>
         </td>

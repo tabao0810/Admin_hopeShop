@@ -111,6 +111,7 @@ const actions={
     },
     async createProductAction(context,data){        
         await createProductApi(data);
+        alert("Thêm sản phẩm mới thành công");
         context.dispatch("getAllProductAction");
 
     }
