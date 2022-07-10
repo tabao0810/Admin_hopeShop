@@ -3,8 +3,8 @@
     <div class="col-12 grid-margin">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title">Quản lý đơn hàng</h4>
-          <div class="card-bar-controll">
+          <h4 class="card-title mb-5">Quản lý đơn hàng</h4>
+          <!-- <div class="card-bar-controll">
             <div class="form-group">
               <div class="input-group">
                 <input
@@ -26,7 +26,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="table-responsive">
             <table class="table" border="1">
               <thead>

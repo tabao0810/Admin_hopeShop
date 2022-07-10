@@ -4,13 +4,16 @@
       <li class="nav-item nav-profile">
         <a href="#" class="nav-link">
           <div class="nav-profile-image">
-            <img src="assets/images/faces/face1.jpg" alt="profile" />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-D9mBDX6f_gmMIqKuv15oeCqPDyP-RxpaPQ8ACOaQ6ZXBhCU_gLbu5-WEWiHKj3MQvw&usqp=CAU"
+              alt="profile"
+            />
             <span class="login-status online"></span>
             <!--change to offline or busy as needed-->
           </div>
           <div class="nav-profile-text d-flex flex-column">
-            <span class="font-weight-bold mb-2">Tạ Quốc Bảo</span>
-            <span class="text-secondary text-small">Project Manager</span>
+            <span class="font-weight-bold mb-2">Hường Trần</span>
+            <span class="text-secondary text-small">Shop Owner</span>
           </div>
           <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
         </a>

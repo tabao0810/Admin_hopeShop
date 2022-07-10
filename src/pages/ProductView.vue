@@ -56,9 +56,9 @@
                     <img :src="product.image" alt="" />
                     {{ product.name }}
                   </td>
-                  <td>{{ product.price }}</td>
+                  <td>{{ format_price(product.price) }}</td>
                   <td>
-                    <span v-if="product.isSale">-{{ product.sale }}%</span>
+                    <span v-if="product.isSale">- {{ product.sale }}%</span>
                   </td>
                   <td>
                     <label
@@ -176,7 +176,7 @@
                     <img :src="product.image" alt="" />
                     {{ product.name }}
                   </td>
-                  <td>{{ product.price }}</td>
+                  <td>{{ format_price(product.price) }}</td>
                   <td>
                     <span v-if="product.isSale">-{{ product.sale }}%</span>
                   </td>
@@ -281,7 +281,7 @@
                     <img :src="product.image" alt="" />
                     {{ product.name }}
                   </td>
-                  <td>{{ product.price }}</td>
+                  <td>{{ format_price(product.price) }}</td>
                   <td>
                     <span v-if="product.isSale">-{{ product.sale }}%</span>
                   </td>
@@ -395,7 +395,7 @@
                     <img :src="product.image" alt="" />
                     {{ product.name }}
                   </td>
-                  <td>{{ product.price }}</td>
+                  <td>{{ format_price(product.price) }}</td>
                   <td>
                     <span v-if="product.isSale">-{{ product.sale }}%</span>
                   </td>
@@ -585,6 +585,12 @@ export default {
     },
     handleCloseModalCartAdd() {
       this.isOpenModalCartAdd = false; // đóng modal
+    },
+    format_price(a) {
+      return a.toLocaleString("vi", {
+        style: "currency",
+        currency: "VND",
+      });
     },
   },
   created() {

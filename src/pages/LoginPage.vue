@@ -27,7 +27,7 @@
           </a>
         </form>
         <div class="social-login">
-          <h3>log in hope</h3>
+          <h3>log in h&m</h3>
           <div class="social-icons">
             <a href="#" class="social-login__icon fab fa-instagram"></a>
             <a href="#" class="social-login__icon fab fa-facebook"></a>

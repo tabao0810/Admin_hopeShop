@@ -7,7 +7,7 @@
     >
       <a class="navbar-brand brand-logo" href="index.html"
         ><img
-          src="https://cdn.shopify.com/s/files/1/1309/3901/t/2/assets/brand5.jpg?v=16743647463979246218"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/1024px-H%26M-Logo.svg.png"
           alt="logo"
       /></a>
       <a class="navbar-brand brand-logo-mini" href="index.html"
@@ -32,11 +32,14 @@
             aria-expanded="false"
           >
             <div class="nav-profile-img">
-              <img src="assets/images/faces/face1.jpg" alt="image" />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn-D9mBDX6f_gmMIqKuv15oeCqPDyP-RxpaPQ8ACOaQ6ZXBhCU_gLbu5-WEWiHKj3MQvw&usqp=CAU"
+                alt="image"
+              />
               <span class="availability-status online"></span>
             </div>
             <div class="nav-profile-text">
-              <p class="mb-1 text-black">Tạ Quốc Bảo</p>
+              <p class="mb-1 text-black">Hường Trần</p>
             </div>
           </a>
           <div
